@@ -1,0 +1,39 @@
+.star {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        z-index: 2;
+        background: #FFF65C;
+        background:
+            linear-gradient(135deg, transparent 4px, #FFF65C 0) top left,
+            linear-gradient(225deg, transparent 4px, #FFF65C 0) top right,
+            linear-gradient(315deg, transparent 4px, #FFF65C 0) bottom right,
+            linear-gradient(45deg,  transparent 4px, #FFF65C 0) bottom left;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+            background-image:
+            radial-gradient(circle at 0 0, rgba(0,0,0,0) 4px, #FFF65C 0px),
+            radial-gradient(circle at 100% 0, rgba(0,0,0,0) 4px, #FFF65C 0px),
+            radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 4px, #FFF65C 0px),
+            radial-gradient(circle at 0 100%, rgba(0,0,0,0) 4px, #FFF65C 0px);
+        opacity: 0;
+        animation: glitter 1.5s linear 0s infinite normal;
+        -webkit-animation: glitter 1.5s linear 0s infinite normal;
+        -moz-animation: glitter 1.5s linear 0s infinite normal;
+        -ms-animation: glitter 1.5s linear 0s infinite normal;
+        -o-animation: glitter 1.5s linear 0s infinite normal;
+}
+
+/*CSS3 keyframes for glittering effect*/
+
+@keyframes glitter {
+      0% { -webkit-transform: scale(0.0); opacity: 0; }
+     25% { -webkit-transform: scale(0.5); opacity: 0.5; }
+     50% { -webkit-transform: scale(1.0); opacity: 0.8; }
+     75% { -webkit-transform: scale(0.5); opacity: 0.5; }
+    100% { -webkit-transform: scale(0.0); opacity: 0; }
+}
