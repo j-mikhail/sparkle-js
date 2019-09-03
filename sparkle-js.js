@@ -1,5 +1,6 @@
 // sparkle-js v0.1
 // by Jonathan Mikhail
+// https://github.com/j-mikhail/sparkle-js
 //
 // Adapted from several code samples:
 //   - https://www.techumber.com/amazing-glitter-star-effect-using-pure-css3/
@@ -16,9 +17,6 @@
 //   - numStars: Number of stars to twinkle simultaneously
 
 function sparkle(e, numStars) {
-
-    console.log(e);
-    console.log(numStars);
 
     var curStars = 0; // Current number of stars
 
